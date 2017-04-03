@@ -12,6 +12,8 @@ Below is listed all GraphQL queries used throughout the presentation:
 
 ## Mutation Callback for Stripe
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/graphcool-examples/serverless-webshop.svg)](https://greenkeeper.io/)
+
 https://4gix95vh56.execute-api.eu-west-1.amazonaws.com/dev/serverless-webshop/stripeTokenAddedToBasketCallback
 
 ```graphql
