@@ -1,0 +1,19 @@
+service: serverless-webshop
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: eu-west-1
+functions:
+  stripeTokenAddedToBasketCallback:
+    handler: functions/stripeTokenAddedToBasketCallback.handler
+    events:
+      - http:
+          path: serverless-webshop/stripeTokenAddedToBasketCallback
+          method: post
+  basketIsDeliveredCallback:
+    handler: functions/basketIsDeliveredCallback.handler
+    events:
+      - http:
+          path: serverless-webshop/basketIsDeliveredCallback
+          method: post
