@@ -1,12 +1,14 @@
-This is the code repository for the Serverless Webshop example used in various presentations as well as the tutorial on https://serverless.com/blog/
+This is the code repository for the Serverless Webshop example used in various presentations and tutorials:
+
+[AWS Serverless Webday](https://aws.amazon.com/de/campaigns/serverless-webday1/)
+
+[serverless.com blog](https://serverless.com/blog/2017-04-5-build-webshop-with-graphql-and-serverless/)
 
 To use this example, create an account for each of these services and fill in the configuration data:
 
  * graph.cool
  * Stripe
  * Mailgun
-
-A complete tutorial is available at https://serverless.com/blog/
 
 ## Data Model
 
