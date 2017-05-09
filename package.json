@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@types/aws-lambda": "^0.0.10",
+    "@types/node": "^7.0.18",
+    "@types/node-fetch": "^1.6.7",
+    "@types/stripe-node": "^4.6.5",
+    "node-fetch": "^1.6.3",
+    "nodeql": "^0.1.2",
+    "stripe": "^4.18.0"
+  },
+  "devDependencies": {
+    "serverless-plugin-typescript": "^0.1.10"
+  }
+}

@@ -1,0 +1,26 @@
+service: webshop
+
+plugins:
+  - serverless-plugin-typescript
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  stripe-charge:
+    handler: functions/stripe-charge.handler
+    events:
+      - http:
+          path: stripe-charge
+          method: post
+    environment:
+      STRIPE_KEY: ''
+  order-validation:
+    handler: functions/order-validation.handler
+    events:
+      - http:
+          path: order-validation
+          method: post
+    environment:
+      GRAPHQL_ENDPOINT: 'https://api.graph.cool/simple/v1/cj2hcbbi754c90174g5qce6lw'

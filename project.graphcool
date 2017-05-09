@@ -1,0 +1,45 @@
+# project: cj2hcbbi754c90174g5qce6lw
+# version: 5
+
+type Basket implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  items: [Item!]! @relation(name: "BasketOnItem")
+  order: Order @relation(name: "BasketOrder")
+  updatedAt: DateTime!
+}
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type Item implements Node {
+  baskets: [Basket!]! @relation(name: "BasketOnItem")
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  price: Int!
+  updatedAt: DateTime!
+}
+
+type Order implements Node {
+  basket: Basket @relation(name: "BasketOrder")
+  createdAt: DateTime!
+  id: ID! @isUnique
+  stripeToken: String!
+  total: Int!
+  updatedAt: DateTime!
+}
+
+type User implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+}
