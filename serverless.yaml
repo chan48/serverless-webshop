@@ -15,7 +15,7 @@ functions:
           path: stripe-charge
           method: post
     environment:
-      STRIPE_KEY: ''
+      STRIPE_KEY: 'sk_test_8ftJzGjcW63KjwuZVFHip9l0'
   order-validation:
     handler: functions/order-validation.handler
     events:
