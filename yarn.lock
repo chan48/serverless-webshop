@@ -84,8 +84,8 @@ node-fetch@^1.6.3:
     is-stream "^1.0.1"
 
 nodeql@^0.1.2:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/nodeql/-/nodeql-0.1.2.tgz#27ac46cd4af185abe0c6f40457cc3c4644f50b31"
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/nodeql/-/nodeql-0.1.4.tgz#47e5095fd827a8263bb05941cb2c9628f00e66a4"
 
 object-assign@^4.1.0:
   version "4.1.1"
